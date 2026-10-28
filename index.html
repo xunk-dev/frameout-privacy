@@ -184,7 +184,7 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
     <p class="lead" data-l="ar">Frame Out تطبيق أندرويد لاستخراج الإطارات من الفيديو. المعالجة تتم على هاتفك، بلا حسابات، ولا نبيع بياناتك الشخصية.</p>
     <p class="lead" data-l="en">Frame Out is an Android app that extracts frames from video. Everything is processed on your phone, there are no accounts, and we never sell your personal data.</p>
     <div class="stamp">
-      <span data-l="ar"><b>آخر تحديث</b> · 26 أكتوبر 2026</span><span data-l="en"><b>Last updated</b> · October 26, 2026</span>
+      <span data-l="ar"><b>آخر تحديث</b> · 28 أكتوبر 2026</span><span data-l="en"><b>Last updated</b> · October 28, 2026</span>
       <span data-l="ar"><b>المنصة</b> · Android</span><span data-l="en"><b>Platform</b> · Android</span>
     </div>
   </div>
@@ -243,7 +243,9 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
   <a href="#s6"><small>06</small><span data-l="ar">المشاركة والتشخيص</span><span data-l="en">Sharing &amp; diagnostics</span></a>
   <a href="#s7"><small>07</small><span data-l="ar">حقوقك وخياراتك</span><span data-l="en">Your rights</span></a>
   <a href="#s8"><small>08</small><span data-l="ar">الأطفال</span><span data-l="en">Children</span></a>
-  <a href="#s9"><small>09</small><span data-l="ar">التواصل</span><span data-l="en">Contact</span></a>
+  <a href="#s9"><small>09</small><span data-l="ar">الإعلانات والإشعارات منّا</span><span data-l="en">Announcements</span></a>
+  <a href="#s10"><small>10</small><span data-l="ar">التحديثات</span><span data-l="en">Updates</span></a>
+  <a href="#contact"><small>11</small><span data-l="ar">التواصل</span><span data-l="en">Contact</span></a>
 </nav>
 
 <main>
@@ -344,9 +346,9 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
       <div class="row"><div><code>ACCESS_MEDIA_LOCATION</code></div>
         <div data-l="ar">قراءة وسم الموقع المخزّن في ملف اخترته، ونسخه إلى الإطارات التي تصدّرها عند تفعيل خيار الاحتفاظ بالموقع. لا يطلب التطبيق موقعك الحيّ ولا يرسل هذه البيانات.</div>
         <div data-l="en">Read the GPS tag already stored in a file you chose and copy it into exported frames when the keep-location setting is on. The app never requests your live location and never transmits it.</div></div>
-      <div class="row"><div><code>POST_NOTIFICATIONS</code></div><div data-l="ar">عرض تقدّم الاستخراج في الخلفية.</div><div data-l="en">Show background extraction progress.</div></div>
+      <div class="row"><div><code>POST_NOTIFICATIONS</code></div><div data-l="ar">عرض تقدّم الاستخراج في الخلفية، وإشعارات الإعلانات النادرة منّا (يمكنك إيقافها من إعدادات الإشعارات).</div><div data-l="en">Show background extraction progress and occasional announcements from us (you can turn them off in notification settings).</div></div>
       <div class="row"><div><code>FOREGROUND_SERVICE</code><code>WAKE_LOCK</code></div><div data-l="ar">إكمال الاستخراج الطويل أثناء وجود التطبيق في الخلفية.</div><div data-l="en">Keep long extractions running while the app is in the background.</div></div>
-      <div class="row"><div><code>INTERNET</code><code>ACCESS_NETWORK_STATE</code></div><div data-l="ar">البحث بالصورة الاختياري، والإعلانات، والتحقق من الشراء. لا تخرج بيانات وسائطك عبرها.</div><div data-l="en">Optional image search, ads and purchase verification. Your media does not leave the device through them.</div></div>
+      <div class="row"><div><code>INTERNET</code><code>ACCESS_NETWORK_STATE</code></div><div data-l="ar">البحث بالصورة الاختياري، والإعلانات، والتحقق من الشراء، وتنزيل ملف الإعلانات الصغير الموقّع (القسم 09). لا تخرج بيانات وسائطك عبرها.</div><div data-l="en">Optional image search, ads, purchase verification, and downloading the small signed announcements file (section 09). Your media does not leave the device through them.</div></div>
       <div class="row"><div><code>BILLING</code></div><div data-l="ar">إظهار الأسعار والتحقق من ملكية Pro (نسخة Google Play).</div><div data-l="en">Show prices and check Pro ownership (Google Play version).</div></div>
     </div>
     <p style="margin-top:14px" data-l="ar">لا يصل التطبيق إلى جهات الاتصال ولا الميكروفون ولا الكاميرا.</p>
@@ -393,6 +395,33 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
 
 <article id="s9">
   <div class="num">09</div>
+  <div>
+    <h2 data-l="ar">الإعلانات والإشعارات منّا</h2><h2 data-l="en">Announcements &amp; promotions from us</h2>
+    <div data-l="ar">
+      <p>يحمّل التطبيق دوريًا ملفًا صغيرًا من نصوص وروابط (وأحيانًا صور أو فيديو) من استضافة ملفات ثابتة، لعرض:</p>
+      <ul>
+        <li><strong>إشعارات نادرة:</strong> تهنئة بمناسبة، أو معلومة عن تحديث، أو تنبيه مهم.</li>
+        <li><strong>بطاقة داخل التطبيق</strong> نعرّف فيها بتطبيقاتنا الأخرى. هي ليست إعلانات Google AdMob، ولا تفتح شيئًا إلا إذا ضغطت عليها.</li>
+      </ul>
+      <p><strong>ما الذي يُرسل؟</strong> طلب تنزيل عادي لملف عام. لا نرسل معه حسابًا ولا معرّف إعلانات ولا أي معرّف للجهاز، ولا نخصّص المحتوى؛ يرى كل المستخدمين المحتوى نفسه. وكأي موقع، قد تسجّل شركة الاستضافة عنوان IP ووقت الطلب وفق سياستها، ولا نصل نحن إلى هذه السجلات لتعريفك.</p>
+      <p><strong>الأمان:</strong> الملف موقّع رقميًا، ويتجاهل التطبيق أي ملف لا يطابق توقيعنا، فلا يستطيع طرف آخر تغيير ما يظهر لك. وتُتحقق بصمة كل صورة أو فيديو قبل عرضه، ويُخزَّن مؤقتًا على جهازك.</p>
+      <p><strong>تحكّمك:</strong> أوقف قناة «Announcements» أو إذن الإشعارات من إعدادات أندرويد في أي وقت، ولن تتأثر ميزات التطبيق.</p>
+    </div>
+    <div data-l="en">
+      <p>The app periodically downloads a small file of text and links (and sometimes images or video) from static file hosting, to show:</p>
+      <ul>
+        <li><strong>Occasional notifications:</strong> a greeting for an occasion, an update note, or an important notice.</li>
+        <li><strong>An in-app card</strong> introducing our other apps. These are not Google AdMob ads, and nothing opens unless you tap the card.</li>
+      </ul>
+      <p><strong>What is sent?</strong> An ordinary download request for a public file. We attach no account, advertising ID or device identifier, and the content is not personalised; every user sees the same thing. As with any website, the hosting provider may log the IP address and time of the request under its own policy; we do not use those logs to identify you.</p>
+      <p><strong>Security:</strong> the file is digitally signed, and the app ignores any file that does not match our signature, so nobody else can change what you see. Each image or video is verified by its hash before it is shown and is cached temporarily on your device.</p>
+      <p><strong>Your control:</strong> turn off the “Announcements” channel or the notification permission in Android settings at any time; the rest of the app keeps working.</p>
+    </div>
+  </div>
+</article>
+
+<article id="s10">
+  <div class="num">10</div>
   <div>
     <h2 data-l="ar">التحديثات</h2><h2 data-l="en">Updates to this policy</h2>
     <p data-l="ar">قد نحدّث هذه السياسة عند تغيّر التطبيق أو القانون. نغيّر تاريخ «آخر تحديث» أعلاه، وتسري التغييرات من تاريخ نشرها.</p>
