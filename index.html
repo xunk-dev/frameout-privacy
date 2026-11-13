@@ -72,7 +72,7 @@ h1 em{font-style:normal;background:var(--grad);-webkit-background-clip:text;back
 .stamp{display:flex;flex-wrap:wrap;gap:10px 22px;color:var(--faint);font-size:14px}
 .stamp b{color:var(--muted);font-weight:600}
 
-/* hero visual: stacked frames echoing the app icon */
+/* hero visual */
 .vis{position:relative;aspect-ratio:1;max-width:360px;width:100%;margin-inline:auto}
 .vis .ring{position:absolute;inset:6%;border-radius:50%;border:1px dashed var(--line)}
 .vis .ring.r2{inset:-4%;opacity:.5}
@@ -184,8 +184,9 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
     <p class="lead" data-l="ar">Frame Out تطبيق أندرويد لاستخراج الإطارات من الفيديو. المعالجة تتم على هاتفك، بلا حسابات، ولا نبيع بياناتك الشخصية.</p>
     <p class="lead" data-l="en">Frame Out is an Android app that extracts frames from video. Everything is processed on your phone, there are no accounts, and we never sell your personal data.</p>
     <div class="stamp">
-      <span data-l="ar"><b>آخر تحديث</b> · 28 أكتوبر 2026</span><span data-l="en"><b>Last updated</b> · October 28, 2026</span>
+      <span data-l="ar"><b>آخر تحديث</b> · 13 نوفمبر 2026</span><span data-l="en"><b>Last updated</b> · November 13, 2026</span>
       <span data-l="ar"><b>المنصة</b> · Android</span><span data-l="en"><b>Platform</b> · Android</span>
+      <span data-l="ar"><b>المطوّر</b> · قاسم أبو شوشه</span><span data-l="en"><b>Developer</b> · Qasem Abu Shosheh</span>
     </div>
   </div>
   <div class="vis" aria-hidden="true">
@@ -347,8 +348,8 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
         <div data-l="ar">قراءة وسم الموقع المخزّن في ملف اخترته، ونسخه إلى الإطارات التي تصدّرها عند تفعيل خيار الاحتفاظ بالموقع. لا يطلب التطبيق موقعك الحيّ ولا يرسل هذه البيانات.</div>
         <div data-l="en">Read the GPS tag already stored in a file you chose and copy it into exported frames when the keep-location setting is on. The app never requests your live location and never transmits it.</div></div>
       <div class="row"><div><code>POST_NOTIFICATIONS</code></div><div data-l="ar">عرض تقدّم الاستخراج في الخلفية، وإشعارات الإعلانات النادرة منّا (يمكنك إيقافها من إعدادات الإشعارات).</div><div data-l="en">Show background extraction progress and occasional announcements from us (you can turn them off in notification settings).</div></div>
-      <div class="row"><div><code>FOREGROUND_SERVICE</code><code>WAKE_LOCK</code></div><div data-l="ar">إكمال الاستخراج الطويل أثناء وجود التطبيق في الخلفية.</div><div data-l="en">Keep long extractions running while the app is in the background.</div></div>
-      <div class="row"><div><code>INTERNET</code><code>ACCESS_NETWORK_STATE</code></div><div data-l="ar">البحث بالصورة الاختياري، والإعلانات، والتحقق من الشراء، وتنزيل ملف الإعلانات الصغير الموقّع (القسم 09). لا تخرج بيانات وسائطك عبرها.</div><div data-l="en">Optional image search, ads, purchase verification, and downloading the small signed announcements file (section 09). Your media does not leave the device through them.</div></div>
+      <div class="row"><div><code>FOREGROUND_SERVICE</code><code>FOREGROUND_SERVICE_DATA_SYNC</code><code>FOREGROUND_SERVICE_MEDIA_PROCESSING</code><code>WAKE_LOCK</code></div><div data-l="ar">إكمال استخراج الإطارات ومعالجة الوسائط الطويلة أثناء وجود التطبيق في الخلفية، مع إشعار ظاهر بالتقدّم. لا تعمل هذه الخدمة إلا بعد أن تبدأ أنت عملية الاستخراج.</div><div data-l="en">Keep long frame extraction and media processing running while the app is in the background, with a visible progress notification. The service only runs after you start an extraction.</div></div>
+      <div class="row"><div><code>INTERNET</code><code>ACCESS_NETWORK_STATE</code></div><div data-l="ar">البحث بالصورة الاختياري، والإعلانات، والتحقق من الشراء، وإشعارات Firebase، وتنزيل ملف الإعلانات الصغير الموقّع (القسم 09). لا تخرج بيانات وسائطك عبرها.</div><div data-l="en">Optional image search, ads, purchase verification, Firebase notifications, and downloading the small signed announcements file (section 09). Your media does not leave the device through them.</div></div>
       <div class="row"><div><code>BILLING</code></div><div data-l="ar">إظهار الأسعار والتحقق من ملكية Pro (نسخة Google Play).</div><div data-l="en">Show prices and check Pro ownership (Google Play version).</div></div>
     </div>
     <p style="margin-top:14px" data-l="ar">لا يصل التطبيق إلى جهات الاتصال ولا الميكروفون ولا الكاميرا.</p>
@@ -373,13 +374,13 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
       <li><strong>تغيير موافقة الإعلانات:</strong> من خيار الخصوصية في إعدادات التطبيق (حيث يتوفر).</li>
       <li><strong>معرّف الإعلانات:</strong> من إعدادات أندرويد ← Google ← الإعلانات يمكنك إعادة تعيينه أو حذفه أو إلغاء إعلانات التخصيص.</li>
       <li><strong>بياناتنا على جهازك:</strong> تُحذف بإلغاء تثبيت التطبيق أو مسح بياناته.</li>
-      <li><strong>حقوق GDPR:</strong> إن كنت في المنطقة الاقتصادية الأوروبية أو المملكة المتحدة فلك حق الاطلاع والتصحيح والحذف والاعتراض والنقل فيما يخص بياناتك الشخصية. لا نحتفظ بحسابات أو بيانات تعرّف بك على خوادمنا، أما بيانات الإعلانات فتديرها Google بصفتها مسؤولة معالجة، ويمكنك ممارسة حقوقك لديها أيضًا.</li>
+      <li><strong>حقوق GDPR:</strong> إن كنت في المنطقة الاقتصادية الأوروبية أو المملكة المتحدة فلك حق الاطلاع والتصحيح والحذف والاعتراض والنقل فيما يخص بياناتك الشخصية. لا نحتفظ بحسابات أو بيانات تعرّف بك على خوادمنا، أما بيانات الإعلانات والإشعارات فتديرها Google بصفتها مسؤولة معالجة، ويمكنك ممارسة حقوقك لديها أيضًا.</li>
     </ul>
     <ul data-l="en">
       <li><strong>Change ad consent:</strong> use the privacy-choices entry in the app's settings (where available).</li>
       <li><strong>Advertising ID:</strong> in Android Settings → Google → Ads you can reset or delete it and opt out of ad personalization.</li>
       <li><strong>Data on your device:</strong> removed by uninstalling the app or clearing its data.</li>
-      <li><strong>GDPR rights:</strong> if you are in the EEA or UK you may request access, correction, erasure, objection and portability of your personal data. We keep no accounts or identifying data on our own servers; ad data is controlled by Google, and you can also exercise your rights with Google.</li>
+      <li><strong>GDPR rights:</strong> if you are in the EEA or UK you may request access, correction, erasure, objection and portability of your personal data. We keep no accounts or identifying data on our own servers; ad and notification data is controlled by Google, and you can also exercise your rights with Google.</li>
     </ul>
   </div>
 </article>
@@ -405,6 +406,7 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
       </ul>
       <p><strong>ما الذي يُرسل؟</strong> طلب تنزيل عادي لملف عام. لا نرسل معه حسابًا ولا معرّف إعلانات ولا أي معرّف للجهاز، ولا نخصّص المحتوى؛ يرى كل المستخدمين المحتوى نفسه. وكأي موقع، قد تسجّل شركة الاستضافة عنوان IP ووقت الطلب وفق سياستها، ولا نصل نحن إلى هذه السجلات لتعريفك.</p>
       <p><strong>الأمان:</strong> الملف موقّع رقميًا، ويتجاهل التطبيق أي ملف لا يطابق توقيعنا، فلا يستطيع طرف آخر تغيير ما يظهر لك. وتُتحقق بصمة كل صورة أو فيديو قبل عرضه، ويُخزَّن مؤقتًا على جهازك.</p>
+      <p><strong>إشعارات Firebase:</strong> نستخدم Firebase Cloud Messaging من Google لإرسال الإشعارات. تنشئ الخدمة معرّف تثبيت ورمز إشعارات خاصًا بجهازك، ويشترك التطبيق في موضوع عام (all) يتلقى فيه جميع المستخدمين الرسائل نفسها. لا نربط هذه المعرّفات باسمك أو بريدك. تعالجها Google وفق <a href="https://firebase.google.com/support/privacy" rel="noopener">سياسة خصوصية Firebase</a>.</p>
       <p><strong>تحكّمك:</strong> أوقف قناة «Announcements» أو إذن الإشعارات من إعدادات أندرويد في أي وقت، ولن تتأثر ميزات التطبيق.</p>
     </div>
     <div data-l="en">
@@ -415,6 +417,7 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
       </ul>
       <p><strong>What is sent?</strong> An ordinary download request for a public file. We attach no account, advertising ID or device identifier, and the content is not personalised; every user sees the same thing. As with any website, the hosting provider may log the IP address and time of the request under its own policy; we do not use those logs to identify you.</p>
       <p><strong>Security:</strong> the file is digitally signed, and the app ignores any file that does not match our signature, so nobody else can change what you see. Each image or video is verified by its hash before it is shown and is cached temporarily on your device.</p>
+      <p><strong>Firebase notifications:</strong> We use Google's Firebase Cloud Messaging to deliver notifications. It creates an installation ID and a push token for your device, and the app subscribes to a general topic (all) so every user gets the same messages. We do not link these identifiers to your name or email. Google processes them under the <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy policy</a>.</p>
       <p><strong>Your control:</strong> turn off the “Announcements” channel or the notification permission in Android settings at any time; the rest of the app keeps working.</p>
     </div>
   </div>
@@ -435,8 +438,8 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
 <section class="cta" id="contact"><div>
   <div>
     <h2 data-l="ar">أسئلة عن الخصوصية؟</h2><h2 data-l="en">Questions about privacy?</h2>
-    <p data-l="ar">راسلنا لأي استفسار أو طلب يخص بياناتك، وسنرد في أقرب وقت.</p>
-    <p data-l="en">Write to us about any question or request regarding your data and we will reply as soon as we can.</p>
+    <p data-l="ar">راسل المطوّر قاسم أبو شوشه لأي استفسار أو طلب يخص بياناتك، وسنرد في أقرب وقت.</p>
+    <p data-l="en">Write to the developer, Qasem Abu Shosheh, about any question or request regarding your data and we will reply as soon as we can.</p>
   </div>
   <a class="btn" href="mailto:xunk.app@gmail.com">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>
@@ -447,7 +450,7 @@ html[lang=ar] [data-l=en],html[lang=en] [data-l=ar]{display:none!important}
 </div>
 
 <footer><div class="wrap">
-  <span><img src="favicon.png" alt="" width="22" height="22">© 2026 Frame Out</span>
+  <span><img src="favicon.png" alt="" width="22" height="22">© 2026 Qasem Abu Shosheh · Frame Out</span>
   <span data-l="ar">صُنع بعناية لخصوصيتك</span><span data-l="en">Built with care for your privacy</span>
 </div></footer>
 
